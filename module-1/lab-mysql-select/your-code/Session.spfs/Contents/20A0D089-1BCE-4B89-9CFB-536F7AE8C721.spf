@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>publications.sql</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>kcid</key>
+			<string>-569438489212509575</string>
+			<key>name</key>
+			<string>localhost</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentFilterV2</key>
+			<dict>
+				<key>children</key>
+				<array/>
+				<key>filterClass</key>
+				<string>groupNode</string>
+				<key>isConjunction</key>
+				<true/>
+			</dict>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK4HCBUWFxgZHSQpLTE0OFUkbnVsbNMJ
+			CgsMEBRXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6MNDg+AAoAD
+			gASjERITgAWABoAIgA1UdHlwZVRyb3dzVGtleXNfECZTZWxlY3Rp
+			b25EZXRhaWxUeXBlUHJpbWFyeUtleWVkRGV0YWlsc9MJCgsaGxyg
+			oIAH0h4fICFaJGNsYXNzbmFtZVgkY2xhc3Nlc18QE05TTXV0YWJs
+			ZURpY3Rpb25hcnmjICIjXE5TRGljdGlvbmFyeVhOU09iamVjdNIK
+			CyUooiYngAmAC4AM0gsqKyxZTlMuc3RyaW5ngApVYXVfaWTSHh8u
+			L18QD05TTXV0YWJsZVN0cmluZ6MuMCNYTlNTdHJpbmfSCyorM4AK
+			WHRpdGxlX2lk0h4fNTZeTlNNdXRhYmxlQXJyYXmjNTcjV05TQXJy
+			YXnSHh8iOaIiI18QD05TS2V5ZWRBcmNoaXZlctE8PVRkYXRhgAEA
+			CAARABoAIwAtADIANwBGAEwAUwBbAGYAbQBxAHMAdQB3AHsAfQB/
+			AIEAgwCIAI0AkgC7AMIAwwDEAMYAywDWAN8A9QD5AQYBDwEUARcB
+			GQEbAR0BIgEsAS4BNAE5AUsBTwFYAV0BXwFoAW0BfAGAAYgBjQGQ
+			AaIBpQGqAAAAAAAAAgEAAAAAAAAAPgAAAAAAAAAAAAAAAAAAAaw=
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {1153, 661}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>SELECT authors.au_id as 'AUTHOR ID', authors.au_lname as 'LAST NAME', authors.au_fname as 'FIRST NAME' , titles.title as 'TITLES' , publishers.pub_name as 'PUBLISHERS'
+
+FROM authors 
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER JOIN titles ON titleauthor.title_id = titles.title_id
+INNER JOIN publishers ON titles.pub_id = publishers.pub_id;
+
+
+</string>
+			<key>table</key>
+			<string>titleauthor</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>214</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>SELECT authors.au_id as 'AUTHOR ID', authors.au_lname as 'LAST NAME', authors.au_fname as 'FIRST NAME' , titles.title as 'TITLES' , publishers.pub_name as 'PUBLISHERS'
+
+FROM authors 
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER JOIN titles ON titleauthor.title_id = titles.title_id
+INNER JOIN publishers ON titles.pub_id = publishers.pub_id</string>
+		<string>SELECT a.au_id as 'AUTHOR ID', a.au_lname as 'LAST NAME', a.au_fname as 'FIRST NAME' , t.title as 'TITLES' , p.pub_name as 'PUBLISHERS'
+
+FROM authors a
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER JOIN titles t ON titleauthor.title_id = titles.title_id
+INNER JOIN publishers p ON titles.pub_id = publishers.pub_id</string>
+		<string>SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM `authors`,`titles`, `publishers`
+
+FROM authors
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER JOIN titles ON titleauthor.title_id = titles.title_id
+INNER JOIN publishers ON titles.pub_id = publishers.pub_id</string>
+		<string>SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM `authors`,`titles`, `publishers`
+
+
+FROM `authors`
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER JOIN titles ON titleauthor.title_id = titles.title_id
+INNER JOIN publishers ON titles.pub_id = publishers.pub_id</string>
+		<string>SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM `authors`,`titles`, `publishers`
+
+FROM `authors`
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER JOIN titles ON titleauthor.title_id = titles.title_id
+INNER JOIN publishers ON titles.pub_id = publishers.pub_id</string>
+		<string>FROM `authors`
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER</string>
+		<string>(SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM `authors`,`titles`, `publishers`)
+
+FROM `authors`
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER JOIN titles ON titleauthor.title_id = titles.title_id
+INNER JOIN publishers ON titles.pub_id = publishers.pub_id</string>
+		<string>SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM `authors`,`titles`, `publishers`
+
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER JOIN titles ON titleauthor.title_id = titles.title_id
+INNER JOIN publishers ON titles.pub_id = publishers.pub_id</string>
+		<string>SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM `authors`,`titles`, `publishers`
+
+FROM authors 
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER JOIN titles ON titleauthor.title_id = titles.title_id
+INNER JOIN publishers ON titles.pub_id = publishers.pub_id</string>
+		<string>SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM (`authors`,`titles`, `publishers`)
+
+FROM authors 
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER JOIN titles ON titles.title_id = titleauthor.title_id
+INNER JOIN publishers ON titles.pub_id = publishers.pub_id</string>
+		<string>SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM `authors`,`titles`, `publishers` ,
+
+FROM authors 
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER JOIN titles ON titles.title_id = titleauthor.title_id
+INNER JOIN publishers ON titles.pub_id = publishers.pub_id</string>
+		<string>SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM `authors`,`titles`, `publishers`
+
+FROM authors 
+INNER JOIN titleauthor ON authors.au_id = titleauthor.`au_id`
+INNER JOIN titles ON titles.title_id = titleauthor.title_id
+INNER JOIN publishers ON titles.pub_id = publishers.pub_id</string>
+		<string>SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM `authors`,`titles`, `publishers`
+FROM authors 
+INNER JOIN titleauthor ON authors.au_id = titleauthor.`au_id`
+INNER JOIN titles ON titles.title_id = titleauthor.title_id
+INNER JOIN publishers ON titles.pub_id = publishers.pub_id</string>
+		<string>SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM `authors`,`titles`, `publishers`
+FROM authors 
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER JOIN titles ON titles.title_id = titleauthor.title_id
+INNER JOIN publishers ON titles.pub_id = publishers.pub_id</string>
+		<string>FROM authors 
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER</string>
+		<string>SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM `authors`,`titles`, `publishers`</string>
+		<string>SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM `authors`,`titles`, `publishers`
+FROM authors 
+INNER JOIN titleauthor ON authors.au_id = titleauthor.au_id
+INNER JOIN titles ON titles.title_id = titleauthor.title_id
+INNER JOIN publishers ON titles.pub_id = pub_info.pub_id</string>
+		<string>SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM `authors`,`titles`, `publishers`
+FROM authors
+INNER JOIN titleauthor ON authors.au_id = titleauthor.title_id
+INNER JOIN titles ON titles.title_id = titleauthor.title_id
+INNER JOIN publishers ON titles.pub_id = pub_info.pub_id</string>
+		<string>FROM `authors`
+INNER JOIN titleauthor ON authors.au_id = titleauthor.title_id
+IN</string>
+		<string>SELECT au_id as 'AUTHOR ID', au_lname as 'LAST NAME', au_fname as 'FIRST NAME' , title as 'TITLES' , pub_name as 'PUBLISHERS' FROM `authors`,`titles`, `publishers`
+FROM `authors`
+INNER JOIN titleauthor ON authors.au_id = titleauthor.title_id
+INNER JOIN titles ON titles.title_id = titleauthor.title_id
+INNER JOIN publishers ON titles.pub_id = pub_info.pub_id</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>8.0.16</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
